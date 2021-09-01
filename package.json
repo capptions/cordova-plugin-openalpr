@@ -5,8 +5,7 @@
   "cordova": {
     "id": "cordova-plugin-openalpr",
     "platforms": [
-      "android",
-      "ios"
+      "android"
     ]
   },
   "repository": {
@@ -17,8 +16,7 @@
     "cordova",
     "openalpr",
     "ecosystem:cordova",
-    "cordova-android",
-    "cordova-ios"
+    "cordova-android"
   ],
   "author": "Mick Vleeshouwer <mick@imick.nl> (https://imick.nl)",
   "contributors": [

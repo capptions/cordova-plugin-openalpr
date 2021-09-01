@@ -32,31 +32,4 @@
         <source-file src="src/android/assets/runtime_data" target-dir="app/src/main/assets"/>
         <source-file src="src/openalpr.conf" target-dir="app/src/main/assets/runtime_data"/>
     </platform>
-
-    <!-- iOS -->
-    <platform name="ios">
-        <config-file target="config.xml" parent="/*">
-            <feature name="OpenALPR">
-                <param name="ios-package" value="OpenALPR"/>
-            </feature>
-        </config-file>
-
-        <header-file src="src/ios/OpenALPR.h"/>
-        <source-file src="src/ios/OpenALPR.mm"/>
-
-        <header-file src="src/ios/Plate.h"/>
-        <source-file src="src/ios/Plate.mm"/>
-
-        <header-file src="src/ios/PlateScanner.h"/>
-        <source-file src="src/ios/PlateScanner.mm"/>
-
-        <resource-file src="src/openalpr.conf" target="openalpr.conf"/>
-        <resource-file src="src/ios/lib/openalpr.framework/runtime_data" target="runtime_data"/>
-
-        <framework src="libc++.tbd"/>
-        <framework src="src/ios/lib/leptonica.framework" custom="true"/>
-        <framework src="src/ios/lib/tesseract.framework" custom="true"/>
-        <framework src="src/ios/lib/opencv2.framework" custom="true"/>
-        <framework src="src/ios/lib/openalpr.framework" custom="true"/>
-    </platform>
 </plugin>
